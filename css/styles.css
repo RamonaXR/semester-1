@@ -1,0 +1,27 @@
+/*Innhold
+
+1. Custom variables
+2. Globas styles
+3. Typography
+4. Colors
+5. CTA
+6. Hamburger
+7. Header
+8. Footer
+9. Home
+10. CSM-Club
+11. Exhibitions
+12. Visit us
+13. About
+14. @Media quieries
+*/
+
+/* 1. Custom variables */ 
+
+:root {
+    --white100: #fff;
+    --green400: rgba(160, 224, 166, 0.33);
+    --green200: rgba(224, 245, 226, 0.40);
+    --red400: rgba(233, 98, 98, 0.26);
+
+}
