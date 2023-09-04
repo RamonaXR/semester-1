@@ -20,11 +20,72 @@
 
 :root {
     --white100: #fff;
-    --green400: rgba(160, 224, 166, 0.33);
     --green200: rgba(224, 245, 226, 0.40);
     --red400: rgba(233, 98, 98, 0.26);
+--h1-background: rgba(52, 132, 127, 0.56);
+--background-header: #dbe8d5;
+--purpletext: #3F3484;
+--redtext: #710808;
+--greentext: #15534F;
+--beige-background: rgba(230, 214, 181, 0.50);
+--blue-background: #3F348430;
+--black: #000;
+--color-cta: #9ac1bf;
+
+--lexend-peta: 'Lexend Peta', sans-serif;
+
+--weight400: 400;
+--weight700: 700;
+--weight600: 600; 
+
+--lineheight: 1.5;
+
+--size16: 1rem;
+--size20: 1.25rem;
+--size24: 1.5rem;
+--size32: 2rem;
+
+
+--boxshadow: 0px 5px 15px 0px rgba(37, 44, 97, 0.15), 0px 2px 4px 0px rgba(136, 144, 194, 0.20);
+
 
 }
+
+/*
+2. Global styles
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4 {
+    font-size: inherit; 
+    line-height: inherit;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--lexend-peta);
+    font-size: var(--size16);
+    font-weight: var(--weight400);
+    line-height: var(--lineheight);
+    background: var(--white100);
+    color: var(--black);
+}
+
+.csm-container section {
+    display: none;
+}
+
 
 /*
 9. Home
