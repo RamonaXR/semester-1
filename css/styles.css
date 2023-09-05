@@ -44,6 +44,7 @@
 --size20: 1.25rem;
 --size24: 1.5rem;
 --size32: 2rem;
+--size36: 2.25rem;
 
 
 --boxshadow: 0px 5px 15px 0px rgba(37, 44, 97, 0.15), 0px 2px 4px 0px rgba(136, 144, 194, 0.20);
@@ -80,17 +81,226 @@ body {
     line-height: var(--lineheight);
     background: var(--white100);
     color: var(--black);
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 .csm-container section {
     display: none;
 }
 
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+
+
+/*
+3. Typography
+*/
+
+h2,
+h1,
+a {
+    font-weight: var(--weight700);
+}
+
+.h2-home {
+    text-transform: uppercase;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+
+/*
+4. Colors
+*/
+
+nav,
+header {
+    background: var(--background-header);
+}
+
+a {
+    color: var(--black);
+}
+
+.homepage-top h1 {
+background-color: var(--h1-background);
+color: var(--white100);
+}
+
+.h2-home {
+    color: var(--purpletext);
+}
+
+.painting-container {
+    background: var(--green200);
+}
+
+/*
+6. Hamburger
+*/
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 15px;
+}
+
+
+/*
+7. Header
+*/
+
+header {
+    padding: 10px 0 0 10px;
+}
 
 /*
 9. Home
 */
 
 .homepage-top {
-    background: 
+    background-image: url(../images/Heroimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    padding: 0 20px;
+    display: flex;
+}
+
+.homepage-top h1 {
+    align-self: center;
+    padding: 10px 5px;
+}
+
+.icons-home {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 15px;
+}
+
+.icons-home img {
+    width: 55px;
+    height: 50px;
+}
+
+.painting-p-container {
+    padding: 15px;
+    display: grid;
+    gap: 20px;
+    
+}
+
+.painting-container {
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.painting-container img {
+    border-radius: 20px 20px 0 0;
+}
+
+.h2-home {
+    margin: 60px 0 35px 0;
+}
+/*
+11. Exhibition
+*/
+
+/*
+14. Media quieries
+*/
+
+@media (min-width:1000px){
+    /*Hamburger*/
+    nav {
+        display: block;
+        position: static;
+    } 
+    
+    .hamburger {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    /*Typography*/
+
+    .homepage-top h1 {
+        font-size: var(--size36);
+
+    }
+    /*Header*/
+
+    nav a {
+        background-color: var(--color-cta);
+        padding: 10px 20px;
+        border-radius: 50px;
+        white-space: nowrap;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        justify-self: end;
+        align-self: center;
+        margin-right: 25px;
+        display: flex;
+        gap: 20px;
+    }
+
+    /*Home*/
+
+    .homepage-top {
+        height: 400px;
+        background-position-y: center;
+        justify-content: center;
+    }
+
+    
 }
