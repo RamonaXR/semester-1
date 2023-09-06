@@ -92,6 +92,11 @@ body {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 img {
@@ -119,14 +124,29 @@ a {
     font-weight: var(--weight700);
 }
 
-.h2-home {
+.h2-home,
+.csm-h3 {
     text-transform: uppercase;
 
 }
 
-h2 {
+h2,
+.csm-box-mobile h3,
+.csm-box-mobile div {
     text-align: center;
 }
+
+
+.hamburger,
+h2 {
+    font-size: var(--size24);
+}
+
+h3 {
+    font-size: var(--size20);
+}
+
+
 
 
 /*
@@ -147,13 +167,25 @@ background-color: var(--h1-background);
 color: var(--white100);
 }
 
-.h2-home {
+.h2-home,
+.csm-h3 {
     color: var(--purpletext);
 }
 
 .painting-container {
     background: var(--green200);
 }
+
+
+.csm-box {
+    background: var(--red400);
+}
+
+.science-home {
+    color: var(--redtext);
+}
+
+
 
 /*
 6. Hamburger
@@ -181,9 +213,9 @@ nav {
 
 .hamburger {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 15px;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
 }
 
 
@@ -193,6 +225,10 @@ nav {
 
 header {
     padding: 10px 0 0 10px;
+}
+
+.logoheader img {
+    max-width: 70%;
 }
 
 /*
@@ -213,16 +249,7 @@ header {
     padding: 10px 5px;
 }
 
-.icons-home {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 15px;
-}
 
-.icons-home img {
-    width: 55px;
-    height: 50px;
-}
 
 .painting-p-container {
     padding: 15px;
@@ -240,9 +267,46 @@ header {
     border-radius: 20px 20px 0 0;
 }
 
-.h2-home {
+.h2-home,
+.science-home {
     margin: 60px 0 35px 0;
 }
+
+.csm-container  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 10px;
+}
+
+.csm-container img {
+    border-radius: 20px;
+    
+    
+}
+
+.csm-box {
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.csm-box p {
+    padding: 15px;
+    gap: 20px;
+}
+
+.csm-box a {
+    padding: 10px 20px;
+    background-color: var(--color-cta);
+    border-radius: 50px;
+}
+
+.csm-box div {
+    margin-bottom: 10px;
+}
+
+
 /*
 11. Exhibition
 */
@@ -302,5 +366,16 @@ header {
         justify-content: center;
     }
 
+    .desktop {
+        display: block;
+    }
+
+    .painting-container {
+        display: flex;
+    }
+
+    .painting-container > div {
+        flex: 1; 
+    }
     
 }
