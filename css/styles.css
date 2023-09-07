@@ -21,6 +21,7 @@
 :root {
     --white100: #fff;
     --green200: rgba(224, 245, 226, 0.40);
+    --greenfooter: #B9C19A;
     --red400: rgba(233, 98, 98, 0.26);
 --h1-background: rgba(52, 132, 127, 0.56);
 --background-header: #dbe8d5;
@@ -132,17 +133,25 @@ a {
 
 h2,
 .csm-box-mobile h3,
-.csm-box-mobile div {
+.csm-box-mobile div,
+.event-h3,
+.fact-h3,
+.cafe-p,
+.exhibition-h1,
+.visit-h1 {
     text-align: center;
 }
 
 
 .hamburger,
-h2 {
+h2,
+.exhibition-h1,
+.visit-h1 {
     font-size: var(--size24);
 }
 
-h3 {
+h3,
+.cafe-p {
     font-size: var(--size20);
 }
 
@@ -172,21 +181,47 @@ color: var(--white100);
     color: var(--purpletext);
 }
 
-.painting-container {
+.painting-container,
+.fun-fact,
+.food-drink {
     background: var(--green200);
 }
 
+.cafeteria,
+.exhibition-box,
+.access {
+    background: var(--beige-background);
+}
 
-.csm-box {
+.csm-box,
+.events-home,
+.location {
     background: var(--red400);
 }
 
-.science-home {
+.science-home,
+.dates-p,
+.fact-h3 {
     color: var(--redtext);
 }
 
+.painting-container,
+.csm-container img,
+.csm-box,
+.exhibition-box,
+.exhibition-left,
+.exhibition-right,
+.fun-fact,
+.cafeteria,
+.events-home {
+    box-shadow: var(--boxshadow);
+}
 
 
+.vr-night,
+.exhibition-h1 {
+    color: var(--greentext);
+}
 /*
 6. Hamburger
 */
@@ -231,6 +266,33 @@ header {
     max-width: 70%;
 }
 
+
+/*
+8. Footer 
+*/
+
+footer {
+    background: var(--greenfooter);
+    display: grid;
+    gap: 20px;
+    padding: 10px 10px 20px 10px;
+    margin-top: 40px;
+    
+}
+
+.icon-socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.adress-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
 /*
 9. Home
 */
@@ -251,28 +313,44 @@ header {
 
 
 
-.painting-p-container {
+.painting-p-container,
+.info-event,
+.info-fact {
     padding: 15px;
     display: grid;
     gap: 20px;
     
 }
 
-.painting-container {
+.painting-container,
+.events-home,
+.cafeteria,
+.fun-fact {
     border-radius: 20px;
     margin: 0 10px;
 }
 
-.painting-container img {
+.painting-container img,
+.vrgirl-home img,
+.cafeteria img {
     border-radius: 20px 20px 0 0;
 }
 
+.fun-fact img {
+    border-radius: 0 0 20px 20px;
+}
+
+
 .h2-home,
-.science-home {
+.science-home,
+.vr-night {
     margin: 60px 0 35px 0;
 }
 
-.csm-container  {
+.csm-container,
+.cafeteria,
+.events-home,
+.fun-fact  {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -307,10 +385,91 @@ header {
 }
 
 
+.fun-fact {
+    margin-top: 40px;
+}
+
+.info-p,
+.cafeteria p {
+    padding: 10px 0;
+}
+
+.cafeteria {
+    margin-top: 40px;
+}
+
+.fact-body {
+    display: flex;
+}
+
 /*
 11. Exhibition
 */
 
+
+.exhibition-h1 {
+    margin: 60px 0 40px 0;
+}
+
+.exhibition-box,
+.exhibition-right,
+.exhibition-left {
+    border-radius: 20px;
+    margin: 0 10px;
+
+}
+
+.exhibition-box h2 {
+    margin: 20px;
+}
+
+.exhibition-box p {
+    padding: 20px;
+}
+
+
+
+
+/*
+12. Visit us 
+*/
+
+.visit-us {
+    margin: 0 10px;
+}
+
+.visit-us img {
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.visit-us,
+.food-drink,
+.location,
+.access,
+.admission,
+.opening-hours {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+
+.visit-us p,
+.food-drink p,
+.location p,
+.access p,
+.admission p,
+.opening-hours p {
+    padding: 10px;
+}
+
+
+
+
+.visit-h1 {
+    margin-top: 50px;
+}
 /*
 14. Media quieries
 */
@@ -370,12 +529,53 @@ header {
         display: block;
     }
 
-    .painting-container {
+    .painting-container,
+    .painting-img {
         display: flex;
+    }
+
+    .painting-container img {
+        border-radius: 15px 0 0 15px;
     }
 
     .painting-container > div {
         flex: 1; 
+    }
+
+    /*Footer*/
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 40px;
+    }
+    
+    .icon-socials {
+        justify-self: end;
+        display: flex;
+        gap: 30px;
+        align-self: center;
+
+    }
+
+    .exhibition-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-content: center;
+        margin: 0 20px 40px 20px;
+    }
+
+    .exhibition-container h1 {
+        grid-column: 1/-1;
+    }
+
+    .exhibition-box {
+        grid-row: 2/5;
+    }
+    
+    .exhibition-left {
+        grid-column: 2/-1;
+        grid-row: 3/4;
     }
     
 }
