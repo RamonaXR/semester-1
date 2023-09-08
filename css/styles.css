@@ -431,8 +431,6 @@ footer {
 .exhibition-left,
 .visit-dino {
     border-radius: 20px;
-    margin: 0 10px;
-
 }
 
 .exhibition-box h2 {
@@ -465,6 +463,7 @@ footer {
 .opening-hours {
     display: flex;
     flex-direction: column;
+    padding: 15px;
 }
 
 .visit-us img {
@@ -613,5 +612,72 @@ footer {
         grid-column: 2/-1;
         grid-row: 3/4;
     }
+
+
+    /*Visit us*/
+
+    .visit-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(7, min-content);
+        gap: 20px;
+    }
+
+
+    .location-h2 {
+        grid-row: 2/3;
+    }
+
+    .location {
+        grid-row: 3/4;
+        height: 135px;
+    }
+    
+    .access-h2 {
+        grid-row: 4/5;
+    }
+
+    .access {
+        grid-row: 5/6;
+        height: 135px;
+    }
+
+    .food-h2 {
+        grid-row: 6/7;
+    }
+
+    .food-drink {
+        grid-row: 7/8;
+        height: 135px;
+    }
+
+    .opening-hours {
+        grid-row: 1/4;
+        height: 450px;
+    }
+
+    .admission {
+        grid-row: 1/4;
+        height: 450px;
+    }
+
+    .museum-photo {
+        grid-row: 4/8;
+        grid-column: 2/4;
+    }
+
+    .visit-us img {
+        margin-bottom: 0;
+    }
+
+    .location-h2,
+    .access-h2,
+    .food-h2 {
+        display: grid;
+        align-self: end;
+    }
+
+
+
     
 }
