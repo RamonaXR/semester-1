@@ -122,7 +122,8 @@ nav,
 
 h2,
 h1,
-a {
+a,
+.join-bold {
     font-weight: var(--weight700);
 }
 
@@ -161,6 +162,8 @@ h3,
 
 
 
+
+
 /*
 4. Colors
 */
@@ -195,7 +198,9 @@ color: var(--white100);
 .exhibition-box,
 .access,
 .csm-h1,
-.what-csm {
+.what-csm,
+.why-join,
+.easy-join {
     background: var(--beige-background);
 }
 
@@ -322,11 +327,13 @@ footer {
     height: 200px;
     padding: 0 20px;
     display: flex;
+    justify-content: center;
 }
 
 .homepage-top h1 {
     align-self: center;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    border-radius: 20px;
 }
 
 
@@ -438,7 +445,8 @@ footer {
 
 .csm-h1 {
     align-self: center;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    border-radius: 20px;
 }
 
 .what-csm {
@@ -447,6 +455,12 @@ footer {
     padding: 20px;
 }
 
+.why-join,
+.easy-join {
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+}
 .csm-page {
     display: grid;
     gap: 50px;
@@ -456,10 +470,14 @@ footer {
 
 .lab-photo,
 .skelleton-photo,
-.what-csm {
+.what-csm,
+.easy-join,
+.why-join {
     border-radius: 20px;
 
 }
+
+
 /*
 11. Exhibition
 */
@@ -550,6 +568,14 @@ footer {
 */
 
 @media (min-width:1000px){
+
+
+    /*General*/
+
+    p {
+        font-size: var(--size20);
+    }
+
     /*Hamburger*/
     nav {
         display: block;
