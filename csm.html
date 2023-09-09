@@ -1,79 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fyll inn beskrivelse">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fyll inn beskrivelse" />
     <title>Home - Community Science Museum</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a2089e7094.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a2089e7094.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <a href="#"><img src="#" alt="Logoheader"></a>
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox"><i class="fa-solid fa-bars"></i></label>
-        <nav>
-            <a href="#">CSM-club</a>
-            <a href="#">Exhibitions</a>
-            <a href="#">Visit us</a>
-            <a href="#">About</a>
-        </nav>
+      <a class="logoheader" href="index.html"
+        ><img src="images/Logo.png" alt="Logoheader"
+      /></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label class="hamburger" for="menu-checkbox"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <a href="#">CSM-club</a>
+        <a href="#">Exhibitions</a>
+        <a href="#">Visit us</a>
+        <a href="#">About</a>
+      </nav>
     </header>
-        <main>
-            <div>
-                <h1>Welcome to the Community Science Club</h1>
-            </div>
-            <div>
-            <h2>What is CSM club</h2>
-            <section>
-                <p>CSM Club is your gateway to a world of scientific wonders, tailor-made for young enthusiasts aged 7 to 15. Our club is a hub for inquisitive minds, dedicated to making science exciting, accessible, and unforgettable through hands-on experiments and engaging activities.</p>
-            </section>
-            </div>
-            <div>
-            <h2>Why you should join:</h2>
-            <div>
-                <img src="images/brownlab.jpg" alt="Long row of chemistry supply">
-            </div>
-            </div>
-            <div>
-                <img src="images/skelletonbrain.jpg" alt="See-through skull with brain inside">
-                <img src="images/formulas.jpg" alt="Formulas scribbled on glass wall">
-            </div>
-            <div>
-                <p>1. Hands-On Learning: Explore science through cool experiments.</p>
-                <p>2. Curiosity Spark: We encourage questions and discovery.</p>
-                <p>3. Expert Guidance: Our mentors ensure safety and learning.</p>
-                <p>4. STEM Skills: Develop essential skills for future success.</p>
-                <p>5. Friendships: Make friends while working together.</p>
-                <p>6. Inspiration: Open doors to a lifelong love of science.</p>
-                <p>7. Fun and Creativity: Science is an exhilarating adventure!</p>
-            </div>
-            <div>
-                <img src="images/Grassglass.jpg" alt="Plants growing in glass">
-                <img src="images/brain.jpg" alt="Plastic brain displayed">
-            </div>
-            <div>
-                <p>
-                    Joining is easy: Just meet us at our CMS-Club lounge on a thursday between 16-18 and one of our mentors will sign you up!
-                </p>
-            </div>
-        </main>
-        <footer>
-            <div>
-                <img src="images/Logo.png" alt="Community science museum logo">
-                <p>Storgata 1, 1621 Fredrikstad</p>
-                <p>Call us: +47 21709080</p>
-            </div>
-            <div>
-                <a href="https://www.facebook.com" target="_blank"><img src="images/facebookicon.svg" alt="Facebook icon"></a>
-                <a href="https://www.youtube.com" target="_blank"><img src="images/youtubeicon.svg" alt="Youtube icon"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="images/instaicon.svg" alt="Instagram icon"></a>
-            </div>
-        </footer>
-    </body>
-    </html>
+    <main>
+      <div class="csm-top">
+        <h1 class="csm-h1">Welcome to the Community Science Club</h1>
+      </div>
+      <div class="csm-page">
+        <div class="what-csm">
+          <h2>What is CSM club</h2>
+          <section>
+            <p>
+              CSM Club is your gateway to a world of scientific wonders,
+              tailor-made for young enthusiasts aged 7 to 15. Our club is a hub
+              for inquisitive minds, dedicated to making science exciting,
+              accessible, and unforgettable through hands-on experiments and
+              engaging activities.
+            </p>
+          </section>
+        </div>
+        <div>
+          <img
+            src="images/skelletonbrain.jpg"
+            alt="See-through skull with brain inside"
+            class="skelleton-photo"
+          />
+        </div>
+
+        <h2>Why you should join:</h2>
+        <div>
+          <img src="images/brownlab.jpg" alt="Long row of chemistry supply" /
+          class="lab-photo">
+        </div>
+
+        <div>
+          <p>1. Hands-On Learning: Explore science through cool experiments.</p>
+          <p>2. Curiosity Spark: We encourage questions and discovery.</p>
+          <p>3. Expert Guidance: Our mentors ensure safety and learning.</p>
+          <p>4. STEM Skills: Develop essential skills for future success.</p>
+          <p>5. Friendships: Make friends while working together.</p>
+          <p>6. Inspiration: Open doors to a lifelong love of science.</p>
+          <p>7. Fun and Creativity: Science is an exhilarating adventure!</p>
+        </div>
+        <div>
+          <p>
+            Joining is easy: Just meet us at our CMS-Club lounge on a thursday
+            between 16-18 and one of our mentors will sign you up!
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="adress-bottom">
+        <img src="images/Logo.png" alt="Community science museum logo" />
+        <span>Storgata 1, 1621 Fredrikstad</span>
+        <span>Call us: +47 21709080</span>
+      </div>
+      <div class="icon-socials">
+        <a href="https://www.facebook.com" target="_blank"
+          ><img src="images/facebookicon.svg" alt="Facebook icon"
+        /></a>
+        <a href="https://www.youtube.com" target="_blank"
+          ><img src="images/youtubeicon.svg" alt="Youtube icon"
+        /></a>
+        <a href="https://www.instagram.com" target="_blank"
+          ><img src="images/instaicon.svg" alt="Instagram icon"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

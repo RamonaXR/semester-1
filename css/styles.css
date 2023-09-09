@@ -153,7 +153,8 @@ h2,
 }
 
 h3,
-.cafe-p {
+.cafe-p,
+.csm-h1 {
     font-size: var(--size20);
 }
 
@@ -192,7 +193,9 @@ color: var(--white100);
 
 .cafeteria,
 .exhibition-box,
-.access {
+.access,
+.csm-h1,
+.what-csm {
     background: var(--beige-background);
 }
 
@@ -417,6 +420,46 @@ footer {
     display: flex;
 }
 
+
+/*
+10. CSM Club
+*/
+
+.csm-top {
+    background-image: url(../images/webbs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.csm-h1 {
+    align-self: center;
+    padding: 10px 5px;
+}
+
+.what-csm {
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+}
+
+.csm-page {
+    display: grid;
+    gap: 50px;
+    margin: 0 20px;
+    
+}
+
+.lab-photo,
+.skelleton-photo,
+.what-csm {
+    border-radius: 20px;
+
+}
 /*
 11. Exhibition
 */
@@ -431,6 +474,7 @@ footer {
 .exhibition-left,
 .visit-dino {
     border-radius: 20px;
+    margin: 30px 10px;
 }
 
 .exhibition-box h2 {
@@ -675,6 +719,11 @@ footer {
     .food-h2 {
         display: grid;
         align-self: end;
+    }
+
+    .opening-hours p {
+        display: flex;
+        justify-content: center;
     }
 
 
