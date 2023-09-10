@@ -49,7 +49,7 @@
 --size36: 2.25rem;
 
 
---boxshadow: 0px 5px 15px 0px rgba(37, 44, 97, 0.15), 0px 2px 4px 0px rgba(136, 144, 194, 0.20);
+--boxshadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 
 }
@@ -128,7 +128,8 @@ a,
 }
 
 .h2-home,
-.csm-h3 {
+.csm-h3,
+.csm-page h2 {
     text-transform: uppercase;
 
 }
@@ -195,7 +196,7 @@ color: var(--white100);
 }
 
 .cafeteria,
-.exhibition-box,
+.exhibition-container section,
 .access,
 .csm-h1,
 .what-csm,
@@ -220,20 +221,22 @@ color: var(--white100);
 .painting-container,
 .csm-container img,
 .csm-box,
-.exhibition-box,
-.exhibition-left,
-.exhibition-right,
 .fun-fact,
 .cafeteria,
 .events-home,
-.visit-dino {
+.exhibition-container section,
+.exhibition-container div {
     box-shadow: var(--boxshadow);
 }
 
+.exhibition-h1 {
+    text-shadow: var(--boxshadow);
+}
 
 .vr-night,
 .exhibition-h1,
-.access-h2 {
+.access-h2,
+.csm-page h2 {
     color: var(--greentext);
 }
 
@@ -264,7 +267,7 @@ header {
 
 nav {
     position: absolute;
-    top: 100px;
+    top: 90px;
     right: 0px;
 
 }
@@ -283,6 +286,7 @@ nav {
 
 header {
     padding: 10px 0 0 10px;
+    height: 90px;
 }
 
 .logoheader img {
@@ -305,7 +309,12 @@ footer {
 
 .icon-socials {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-socials img {
+    max-width: 50px;
 }
 
 
@@ -477,6 +486,15 @@ footer {
 
 }
 
+.skelly-wrap,
+.lab-wrap {
+    display: flex;
+}
+
+.csm-page h2 {
+    margin-top: 30px;
+}
+
 
 /*
 11. Exhibition
@@ -487,25 +505,25 @@ footer {
     margin: 60px 0 40px 0;
 }
 
-.exhibition-box,
-.exhibition-right,
-.exhibition-left,
-.visit-dino {
+
+
+.exhibition-container section {
     border-radius: 20px;
-    margin: 30px 10px;
-}
-
-.exhibition-box h2 {
+    padding: 40px 10px 60px 10px;
     display: flex;
-    justify-content: flex-start;
-    margin: 20px;
-    
+    flex-direction: column;
+    gap: 20px;
 }
 
-.exhibition-box p {
-    padding: 20px;
+.exhibition-container {
+    padding: 0 10px;
 }
 
+.exhibition-container div,
+.exhibition-container img {
+    display: flex;
+    border-radius: 20px;
+}
 
 
 
@@ -572,8 +590,8 @@ footer {
 
     /*General*/
 
-    p {
-        font-size: var(--size20);
+    main {
+        gap: 30px;
     }
 
     /*Hamburger*/
@@ -665,24 +683,25 @@ footer {
     .exhibition-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        align-content: center;
-        margin: 0 20px 40px 20px;
+        padding: 0 20px;
     }
 
     .exhibition-container h1 {
         grid-column: 1/-1;
     }
 
-    .exhibition-box {
-        grid-row: 2/5;
-    }
-    
-    .exhibition-left {
-        grid-column: 2/-1;
-        grid-row: 3/4;
+    .exhibition-container section {
+        padding: 60px 20px 100px 20px;
+
     }
 
+    .visit-dino {
+        content: url(../images/dinosaur-desktop.jpg);
+    }
+
+    .exhibition-left {
+        content: url(../images/Spaceman-desktop.jpg);
+    }
 
     /*Visit us*/
 
@@ -751,6 +770,28 @@ footer {
         display: flex;
         justify-content: center;
     }
+
+/*CSM Club*/ 
+
+.csm-page {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px;
+    
+}
+
+.csm-page h2 {
+    grid-column: 1/-1;
+}
+
+.why-join {
+    grid-column: 1/2;
+    grid-row: 4/8;
+}
+
+
+.lab-wrap {
+    grid-column: 2/-1;
+}
 
 
 
