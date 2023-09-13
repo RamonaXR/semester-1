@@ -694,7 +694,8 @@ footer {
         transition: background-color 0.3s ease;
     }
 
-    nav a:hover {
+    nav a:hover,
+    .join-a:hover {
         background-color: var(--active-cta);
         transition: 500ms;
     }
