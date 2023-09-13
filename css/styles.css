@@ -218,8 +218,7 @@ color: var(--white100);
 .science-home,
 .dates-p,
 .fact-h3,
-.food-h2,
-.set-apart {
+.food-h2 {
     color: var(--redtext);
 }
 
@@ -230,7 +229,18 @@ color: var(--white100);
 .cafeteria,
 .events-home,
 .exhibition-container section,
-.exhibition-container div {
+.exhibition-container div,
+.about-top,
+.volunteer,
+.support,
+.internships,
+.location,
+.admission,
+.food-drink,
+.opening-hours,
+.access,
+.museum-photo,
+.color-museum {
     box-shadow: var(--boxshadow);
 }
 
