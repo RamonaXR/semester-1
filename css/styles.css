@@ -88,7 +88,7 @@ body {
     margin: 0;
 }
 
-.csm-web {
+.hide {
     display: none;
 }
 
@@ -282,6 +282,7 @@ nav a {
     display: block;
     padding: 10px 20px;
 }
+
 
 header {
     position: relative;
@@ -572,7 +573,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
     gap: 50px;
 }
 
@@ -599,7 +599,9 @@ footer {
     padding: 20px;
 }
 
-
+.access-h2 {
+    word-break: break-word;
+}
 
 .admission p,
 .opening-hours p {
@@ -613,7 +615,7 @@ footer {
 }
 
 .visit-h3 {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 
@@ -683,6 +685,16 @@ footer {
 
     nav a {
         display: inline-block;
+        cursor: pointer;
+    }
+
+    nav a {
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #710808;
     }
 
     /*Typography*/
@@ -842,7 +854,7 @@ footer {
 
     .location {
         grid-row: 3/4;
-        height: 135px;
+        height: 200px;
     }
     
     .access-h2 {
@@ -851,7 +863,7 @@ footer {
 
     .access {
         grid-row: 5/6;
-        height: 135px;
+        height: 200px;
     }
 
     .food-h2 {
@@ -860,17 +872,17 @@ footer {
 
     .food-drink {
         grid-row: 7/8;
-        height: 135px;
+        height: 200px;
     }
 
     .opening-hours {
         grid-row: 1/4;
-        height: 450px;
+        height: 550px;
     }
 
     .admission {
         grid-row: 1/4;
-        height: 450px;
+        height: 550px;
     }
 
     .museum-photo {
