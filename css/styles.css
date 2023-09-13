@@ -218,7 +218,8 @@ color: var(--white100);
 .science-home,
 .dates-p,
 .fact-h3,
-.food-h2 {
+.food-h2,
+.set-apart {
     color: var(--redtext);
 }
 
