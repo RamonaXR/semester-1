@@ -425,6 +425,17 @@ footer {
     padding: 10px;
 }
 
+.csm-h3 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.button-join {
+    display: flex;
+    justify-content: center;
+}
+
 .csm-box p {
     padding: 15px;
     gap: 20px;
@@ -711,19 +722,12 @@ footer {
         justify-content: center;
     }
 
-    .button-join {
-        display: flex;
-        justify-content: center;
-    }
+    
 
 
-    .csm-web {
-        display: block;
-    }
+    
 
-    .csm-box-mobile {
-        display: none;
-    }
+    
 
     .painting-container,
     .painting-img,
@@ -731,11 +735,7 @@ footer {
         display: flex;
     }
 
-    .csm-h3 {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-    }
+    
 
     .csm-container {
         display: grid;
