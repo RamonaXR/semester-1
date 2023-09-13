@@ -244,7 +244,11 @@ color: var(--white100);
     box-shadow: var(--boxshadow);
 }
 
-.exhibition-h1 {
+.exhibition-h1,
+.about-h1,
+.csm-h1,
+.visit-h1,
+.h2-home {
     text-shadow: var(--boxshadow);
 }
 
