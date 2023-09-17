@@ -817,6 +817,7 @@ header {
     align-self: end;
   }
 
+  
   nav,
   .icon-socials {
     align-self: center;
@@ -841,7 +842,6 @@ header {
 
   /*Gap*/
 
-  
 
   main,
   .fact-container,
@@ -877,11 +877,8 @@ header {
     padding: 20px;
   }
 
+  
 
-  nav a {
-    padding: 10px 20px;
-    border-radius: 50px;
-  }
 
   .homepage-top h1,
   .exhibition-h1 {
@@ -949,12 +946,17 @@ header {
     margin-top: 0px;
   }
 
+  nav a {
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+
  /*Hamburger and nav */
 
-  nav {
-    display: block;
+    
+ nav {
     position: static;
-  }
+ }
 
   .hamburger {
     display: none;
