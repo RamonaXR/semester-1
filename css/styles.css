@@ -325,7 +325,7 @@ footer {
 9.Flex
 */
 
-
+header,
 .homepage-top,
 .csm-container,
 .cafeteria,
@@ -349,7 +349,6 @@ footer {
 .support,
 .volunteer,
 .internships,
-.about-bottom,
 .adress-bottom,
 .icon-socials {
 display: flex;
@@ -373,6 +372,11 @@ display: flex;
 /*
 11.Layout
 */
+
+
+.break {
+    word-break: break-word;
+}
 
 .icon-socials,
 .csm-h3,
@@ -401,7 +405,6 @@ display: flex;
 .internships,
 .about-container,
 .about-top,
-.about-bottom,
 .adress-bottom {
   flex-direction: column;
 }
@@ -539,7 +542,6 @@ display: flex;
 .volunteer,
 .internships,
 .about-top,
-.about-bottom,
 .icon-socials {
     gap: 20px;
 }  
@@ -656,6 +658,7 @@ display: flex;
 
 .about-container {
   padding: 20px 10px;
+  word-break: break-word;
 }
 
 
@@ -693,7 +696,7 @@ header,
 }
 
 header {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
   }
 
   footer {
@@ -955,6 +958,7 @@ header {
 
     
  nav {
+    display: inline-block;
     position: static;
  }
 
