@@ -692,22 +692,107 @@ header,
     display: grid;
 }
 
-  /*Gap*/
-
-  main,
-  .fact-container,
-  .icon-socials,
-  .about-container {
-    gap: 30px;
+header {
+    grid-template-columns: 1fr 1fr;
   }
 
-  nav,
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+.csm-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .exhibition-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .exhibition-container h1 {
+    grid-column: 1/-1;
+  }
+
   .visit-us {
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, min-content);
   }
-  
 
-  /*Group layouts*/
+  .location-h2 {
+    grid-row: 2/3;
+  }
+
+  .location {
+    grid-row: 3/4;
+  }
+
+
+  .access-h2 {
+    grid-row: 4/5;
+  }
+
+  .access {
+    grid-row: 5/6;
+  }
+
+  .food-h2 {
+    grid-row: 6/7;
+  }
+
+  .food-drink {
+    grid-row: 7/8;
+  }
+
+  .opening-hours {
+    grid-row: 1/4;
+  }
+
+
+  .admission {
+    grid-row: 1/4;
+  }
+
+  .museum-photo {
+    grid-row: 4/8;
+    grid-column: 2/4;
+  }
+
+
+  .csm-page {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .csm-page h2 {
+    grid-column: 1/-1;
+  }
+
+  .why-join {
+    grid-column: 1/2;
+    grid-row: 4/8;
+  }
+
+  .lab-wrap {
+    grid-column: 2/-1;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-h1 {
+    grid-column: 1/2;
+  }
+
+  .about-container h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .about-top {
+    grid-row: 2/5;
+  }
+
+
+  /*Positioning*/
 
   .opening-hours p,
   .homepage-top {
@@ -742,6 +827,40 @@ header,
     justify-self: end;
   }
 
+  .homepage-top {
+    background-position-y: center;
+  }
+
+
+  .fun-fact,
+  .events-home {
+    flex-direction: row;
+  }
+
+
+
+  /*Gap*/
+
+  
+
+  main,
+  .fact-container,
+  .icon-socials,
+  .about-container,
+  .csm-container {
+    gap: 30px;
+  }
+
+  nav,
+  .visit-us {
+    gap: 20px;
+  }
+  
+
+  /*Layouts*/
+
+ 
+
   .opening-hours,
   .admission {
     height: 550px;
@@ -753,7 +872,85 @@ header,
   }
 
 
-  /*Hamburger*/
+  .about-container {
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+
+  nav a {
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+
+  .homepage-top h1,
+  .exhibition-h1 {
+    font-size: var(--size36);
+  }
+
+
+  .homepage-top {
+    height: 400px;
+  }
+
+
+  .fun-fact img {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .painting-container img,
+  .vrgirl-home img {
+    border-radius: 15px 0 0 15px;
+  }
+
+
+  footer {
+    padding: 20px 40px;
+  }
+
+
+  .exhibition-container section {
+    padding: 60px 20px 100px 20px;
+  }
+
+  .visit-dino {
+    content: url(../images/dinosaur-desktop.jpg);
+  }
+
+  .exhibition-left {
+    content: url(../images/Spaceman-desktop.jpg);
+  }
+
+
+  .location,
+  .access,
+  .food-drink {
+    height: 200px;
+  }
+
+
+  .opening-hours,
+  .admission {
+    height: 550px;
+  }
+
+
+  .visit-us img {
+    margin-bottom: 0;
+  }
+
+
+  .about-container {
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .about-h1 {
+    margin-top: 0px;
+  }
+
+ /*Hamburger and nav */
+
   nav {
     display: block;
     position: static;
@@ -764,24 +961,11 @@ header,
   }
 
 
-  /*Typography*/
-
-  .homepage-top h1,
-  .exhibition-h1 {
-    font-size: var(--size36);
-  }
-  /*Header*/
-
   nav a {
     background-color: var(--color-cta);
-    padding: 10px 20px;
-    border-radius: 50px;
     white-space: nowrap;
   }
 
-  header {
-    grid-template-columns: 1fr 1fr;
-  }
 
   nav {
     margin-right: 25px;
@@ -805,166 +989,6 @@ header,
     transition: 500ms;
   }
 
-  /*Home*/
 
-  .homepage-top {
-    height: 400px;
-    background-position-y: center;
-  }
-
-
-  .csm-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-
-
-
-  .fun-fact,
-  .events-home {
-    flex-direction: row;
-  }
-
-  .fun-fact img {
-    border-radius: 0 15px 15px 0;
-  }
-
-  .painting-container img,
-  .vrgirl-home img {
-    border-radius: 15px 0 0 15px;
-  }
-
-
-  /*Footer*/
-
-  footer {
-    grid-template-columns: 1fr 1fr;
-    padding: 20px 40px;
-  }
-
-
-  /*Exhibition*/
-
-  .exhibition-container {
-    grid-template-columns: 1fr 1fr;
-    padding: 0 20px;
-  }
-
-  .exhibition-container h1 {
-    grid-column: 1/-1;
-  }
-
-  .exhibition-container section {
-    padding: 60px 20px 100px 20px;
-  }
-
-  .visit-dino {
-    content: url(../images/dinosaur-desktop.jpg);
-  }
-
-  .exhibition-left {
-    content: url(../images/Spaceman-desktop.jpg);
-  }
-
-  /*Visit us*/
-
-  .visit-us {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(7, min-content);
-  }
-
-  .location-h2 {
-    grid-row: 2/3;
-  }
-
-  .location {
-    grid-row: 3/4;
-  }
-
-  .location,
-  .access,
-  .food-drink {
-    height: 200px;
-  }
-
-  .access-h2 {
-    grid-row: 4/5;
-  }
-
-  .access {
-    grid-row: 5/6;
-  }
-
-  .food-h2 {
-    grid-row: 6/7;
-  }
-
-  .food-drink {
-    grid-row: 7/8;
-  }
-
-  .opening-hours {
-    grid-row: 1/4;
-  }
-
-  .opening-hours,
-  .admission {
-    height: 550px;
-  }
-
-  .admission {
-    grid-row: 1/4;
-  }
-
-  .museum-photo {
-    grid-row: 4/8;
-    grid-column: 2/4;
-  }
-
-  .visit-us img {
-    margin-bottom: 0;
-  }
-
-
-  /*CSM Club*/
-
-  .csm-page {
-    grid-template-columns: 1fr 1fr;
-    padding: 0 20px;
-  }
-
-  .csm-page h2 {
-    grid-column: 1/-1;
-  }
-
-  .why-join {
-    grid-column: 1/2;
-    grid-row: 4/8;
-  }
-
-  .lab-wrap {
-    grid-column: 2/-1;
-  }
-
-  /*About*/
-
-  .about-container {
-    grid-template-columns: 1fr 1fr;
-    margin-top: 30px;
-    padding: 20px;
-  }
-
-  .about-h1 {
-    grid-column: 1/2;
-    margin-top: 0px;
-  }
-
-  .about-container h2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .about-top {
-    grid-row: 2/5;
-  }
+  
 }
