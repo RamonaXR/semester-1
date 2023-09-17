@@ -669,6 +669,15 @@ display: flex;
 
  /*Flex*/
 
+ nav,
+ .painting-container,
+ .painting-img,
+ .vrgirl-home,
+ .fact-container,
+ .icon-socials,
+ .opening-hours p {
+    display: flex;
+ }
 
  /*Grid*/
 
@@ -692,6 +701,58 @@ header,
     gap: 30px;
   }
 
+  nav,
+  .visit-us {
+    gap: 20px;
+  }
+  
+
+  /*Group layouts*/
+
+  .opening-hours p,
+  .homepage-top {
+    justify-content: center;
+  }
+
+  .csm-container img,
+  .csm-web,
+  .vrgirl-home,
+  .info-event,
+  .fun-fact,
+  .cafeteria,
+  .fun-fact section,
+  .fun-fact div,
+  .painting-container > div {
+    flex: 1;
+  }
+
+  .location-h2,
+  .access-h2,
+  .food-h2 {
+    align-self: end;
+  }
+
+  nav,
+  .icon-socials {
+    align-self: center;
+  }
+
+  nav,
+  .icon-socials {
+    justify-self: end;
+  }
+
+  .opening-hours,
+  .admission {
+    height: 550px;
+  }
+
+  .exhibition-container,
+  .csm-page {
+    padding: 0 20px;
+  }
+
+
   /*Hamburger*/
   nav {
     display: block;
@@ -702,7 +763,6 @@ header,
     display: none;
   }
 
-  
 
   /*Typography*/
 
@@ -724,11 +784,7 @@ header,
   }
 
   nav {
-    justify-self: end;
-    align-self: center;
     margin-right: 25px;
-    display: flex;
-    gap: 20px;
   }
 
 
@@ -754,37 +810,18 @@ header,
   .homepage-top {
     height: 400px;
     background-position-y: center;
-    justify-content: center;
   }
 
-  .painting-container,
-  .painting-img,
-  .vrgirl-home {
-    display: flex;
-  }
 
   .csm-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
 
-  .csm-container img,
-  .csm-web,
-  .vrgirl-home,
-  .info-event,
+
+
   .fun-fact,
-  .cafeteria,
-  .fun-fact section,
-  .fun-fact div,
-  .painting-container > div {
-    flex: 1;
-  }
-
-  .fact-container {
-    display: flex;
-  }
-
-  .fun-fact {
+  .events-home {
     flex-direction: row;
   }
 
@@ -798,10 +835,6 @@ header,
   }
 
 
-  .events-home {
-    flex-direction: row;
-  }
-
   /*Footer*/
 
   footer {
@@ -809,11 +842,6 @@ header,
     padding: 20px 40px;
   }
 
-  .icon-socials {
-    justify-self: end;
-    display: flex;
-    align-self: center;
-  }
 
   /*Exhibition*/
 
@@ -843,7 +871,6 @@ header,
   .visit-us {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(7, min-content);
-    gap: 20px;
   }
 
   .location-h2 {
@@ -898,16 +925,6 @@ header,
     margin-bottom: 0;
   }
 
-  .location-h2,
-  .access-h2,
-  .food-h2 {
-    align-self: end;
-  }
-
-  .opening-hours p {
-    display: flex;
-    justify-content: center;
-  }
 
   /*CSM Club*/
 
